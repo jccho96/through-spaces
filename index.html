@@ -19,10 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Inconsolata:wght@300;400&family=Montserrat:wght@300;400&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/4949bc6bcb.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="styles.css" />
     <title>Through Spaces</title>
   </head>
@@ -91,9 +88,10 @@
           Seoul and New York.
         </h1>
       </div>
-      <div class="main-image">
+      <div class="title-bg"></div>
+      <!-- <div class="main-image">
         <img src="images/seoul5.jpeg" class="mx-auto d-block" />
-      </div>
+      </div> -->
     </section>
     <!-- End of Title -->
     <!-- Download -->
@@ -283,9 +281,34 @@
       </div>
     </section>
     <!--end of sign up -->
+    <!-- let's chat -->
     <button type="button" class="chat-btn">
       <i class="far fa-comment-dots"></i> Let's Chat!
     </button>
+    <div class="chat-wrapper">
+      <div class="chat">
+        <div class="chat-header">
+          <div class="header-message">
+            <p>Let's Chat!</p>
+            <i id="chatX" class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="agent-message">
+            <i class="fa-solid fa-circle" id="online"></i> Our agent will
+            respond as soon as possible.
+          </div>
+        </div>
+        <div class="chat-area"></div>
+        <div class="message">
+          <textarea
+            name="chat"
+            placeholder="Type message..."
+            required
+          ></textarea>
+          <i class="fa-regular fa-face-smile"></i>
+          <i class="fa-solid fa-link"></i>
+        </div>
+      </div>
+    </div>
     <!--footer-->
     <footer>
       <div class="d-flex flex-row">
@@ -295,12 +318,16 @@
       <div class="information">
         © 2021 ThroughSpaces Inc.
         <br />
-        Address
+        70 Redwood Ave. New York, NY 10023
         <br />
-        Phone Number
+        646-504-5740
       </div>
     </footer>
     <!--End of footer -->
+    <script
+      src="https://kit.fontawesome.com/ae92c0f6ba.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -316,5 +343,6 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
